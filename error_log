@@ -1,0 +1,329 @@
+[24-Feb-2020 07:28:01 Asia/Makassar] PHP Fatal error:  Call to a member function encrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 67
+[24-Feb-2020 15:22:41 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING), expecting function (T_FUNCTION) in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 5
+[24-Feb-2020 15:22:57 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING), expecting function (T_FUNCTION) in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 5
+[24-Feb-2020 15:22:59 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING), expecting function (T_FUNCTION) in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 5
+[24-Feb-2020 15:23:00 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING), expecting function (T_FUNCTION) in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 5
+[24-Feb-2020 15:23:00 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING), expecting function (T_FUNCTION) in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 5
+[24-Feb-2020 15:23:01 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING), expecting function (T_FUNCTION) in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 5
+[24-Feb-2020 15:23:02 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING), expecting function (T_FUNCTION) in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 5
+[24-Feb-2020 15:23:04 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING), expecting function (T_FUNCTION) in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 5
+[25-Feb-2020 06:17:22 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 220
+[25-Feb-2020 06:18:11 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 220
+[25-Feb-2020 06:19:34 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 220
+[25-Feb-2020 06:20:07 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/User.php on line 74
+[25-Feb-2020 06:21:06 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 220
+[26-Feb-2020 16:47:55 Asia/Jakarta] PHP Fatal error:  Call to a member function encrypt() on null in /home/thehera1/public_html/hawasapp.com/application/views/login.php on line 61
+[26-Feb-2020 17:06:00 Asia/Jakarta] PHP Fatal error:  Call to a member function encrpyt() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 223
+[26-Feb-2020 17:06:45 Asia/Jakarta] PHP Fatal error:  Call to a member function encrpyt() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 223
+[26-Feb-2020 17:08:11 Asia/Jakarta] PHP Fatal error:  Call to a member function encrpyt() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 223
+[26-Feb-2020 17:36:02 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 317
+[26-Feb-2020 17:39:57 Asia/Jakarta] PHP Fatal error:  Call to undefined method Utility::CountGlobal() in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 52
+[26-Feb-2020 17:58:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 59
+[26-Feb-2020 21:38:19 Asia/Makassar] PHP Fatal error:  Cannot access empty property in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 122
+[26-Feb-2020 21:40:29 Asia/Makassar] PHP Fatal error:  Cannot access empty property in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 122
+[26-Feb-2020 22:56:02 Asia/Makassar] PHP Fatal error:  Cannot access empty property in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 161
+[26-Feb-2020 22:56:41 Asia/Makassar] PHP Fatal error:  Cannot access empty property in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 161
+[26-Feb-2020 22:57:59 Asia/Makassar] PHP Fatal error:  Cannot access empty property in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 161
+[29-Feb-2020 16:30:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 575
+[29-Feb-2020 16:30:23 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=' in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 575
+[29-Feb-2020 22:29:46 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Model_global::SendMessageForum() in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 219
+[29-Feb-2020 22:49:53 Asia/Jakarta] PHP Fatal error:  Call to undefined method Model_global::SendMessageComplaint() in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 35
+[29-Feb-2020 23:12:13 Africa/Lagos] PHP Fatal error:  Call to undefined method Model_global::GetdataForComplaintDash() in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 209
+[01-Mar-2020 06:38:04 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 277
+[01-Mar-2020 06:38:07 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 277
+[01-Mar-2020 06:38:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 277
+[01-Mar-2020 06:38:09 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 277
+[01-Mar-2020 06:38:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 277
+[01-Mar-2020 07:25:29 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '?>' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 136
+[01-Mar-2020 07:25:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '?>' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 136
+[01-Mar-2020 07:25:32 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '?>' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 136
+[01-Mar-2020 07:25:35 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '?>' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 136
+[01-Mar-2020 07:25:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '?>' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 136
+[01-Mar-2020 07:25:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '?>' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 136
+[01-Mar-2020 08:27:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 227
+[01-Mar-2020 22:30:27 Asia/Jakarta] PHP Fatal error:  Call to undefined function get_confirmed_locations() in /home/thehera1/public_html/hawasapp.com/application/views/page/map_tps.php on line 425
+[02-Mar-2020 04:21:43 Asia/Jakarta] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 146
+[02-Mar-2020 04:22:00 Asia/Jakarta] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 146
+[02-Mar-2020 04:22:22 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[02-Mar-2020 04:22:23 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[02-Mar-2020 04:22:24 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[02-Mar-2020 04:22:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[02-Mar-2020 04:22:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[02-Mar-2020 04:22:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[02-Mar-2020 04:22:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[02-Mar-2020 04:22:27 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[02-Mar-2020 04:22:27 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 149
+[05-Mar-2020 00:38:28 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 432
+[05-Mar-2020 00:38:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 432
+[05-Mar-2020 00:43:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 602
+[05-Mar-2020 00:43:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 602
+[05-Mar-2020 00:44:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 602
+[05-Mar-2020 00:46:16 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 602
+[05-Mar-2020 00:47:33 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 602
+[05-Mar-2020 00:49:48 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 602
+[05-Mar-2020 03:44:15 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::esult_array() in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 122
+[05-Mar-2020 04:14:07 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'resultDataQuick' (T_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 179
+[05-Mar-2020 04:14:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'resultDataQuick' (T_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 179
+[05-Mar-2020 04:50:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 171
+[05-Mar-2020 10:08:23 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/thehera1/public_html/hawasapp.com/application/views/sidebar.php on line 98
+[06-Mar-2020 02:51:44 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Utility::SyncDataBC() in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 621
+[06-Mar-2020 02:51:50 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Utility::SyncDataBC() in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 621
+[06-Mar-2020 02:51:56 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Utility::SyncDataBC() in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 621
+[06-Mar-2020 09:00:39 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:00:49 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:00:59 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:01:09 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:01:19 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:01:29 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:01:39 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:01:49 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:01:59 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:02:09 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:02:19 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:02:29 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:02:39 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:02:49 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:02:59 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:03:09 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:03:19 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:03:29 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:03:33 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:03:39 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:03:49 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:03:53 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:03:59 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:04:09 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:04:19 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:04:29 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:04:39 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:04:49 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:04:59 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 113
+[06-Mar-2020 09:05:09 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 111
+[06-Mar-2020 09:05:14 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 111
+[06-Mar-2020 09:05:19 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 111
+[06-Mar-2020 09:05:26 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 111
+[06-Mar-2020 09:05:29 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 111
+[06-Mar-2020 09:05:38 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 111
+[06-Mar-2020 09:05:39 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 111
+[06-Mar-2020 09:05:49 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 111
+[06-Mar-2020 09:21:39 Asia/Makassar] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 230
+[06-Mar-2020 09:22:11 Asia/Makassar] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 230
+[06-Mar-2020 09:22:14 Asia/Makassar] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 230
+[06-Mar-2020 09:22:39 Asia/Makassar] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 230
+[06-Mar-2020 09:22:41 Asia/Makassar] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 230
+[06-Mar-2020 09:22:51 Asia/Makassar] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 230
+[06-Mar-2020 09:23:33 Asia/Makassar] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_user.php on line 230
+[10-Mar-2020 22:29:28 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 220
+[10-Mar-2020 22:31:08 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 220
+[11-Mar-2020 05:45:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 207
+[11-Mar-2020 05:50:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '?>', expecting variable (T_VARIABLE) or '$' in /home/thehera1/public_html/hawasapp.com/application/views/utility/map_petugas.php on line 57
+[11-Mar-2020 09:24:06 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 218
+[11-Mar-2020 09:26:52 Asia/Makassar] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/controllers/user/User.php on line 392
+[11-Mar-2020 19:53:26 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 218
+[11-Mar-2020 19:57:47 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 218
+[11-Mar-2020 20:00:01 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 218
+[11-Mar-2020 20:00:27 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 218
+[11-Mar-2020 20:03:49 Asia/Makassar] PHP Fatal error:  Call to a member function decrypt() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 218
+[11-Mar-2020 19:18:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 225
+[11-Mar-2020 19:18:48 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 225
+[11-Mar-2020 20:19:33 Asia/Makassar] PHP Fatal error:  Call to undefined method Model_globalAndroid::addLogFoto() in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 240
+[11-Mar-2020 20:38:11 Asia/Makassar] PHP Fatal error:  Call to undefined method stdClass::num_rows() in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 253
+[11-Mar-2020 20:40:43 Asia/Makassar] PHP Fatal error:  Call to undefined method stdClass::row() in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 256
+[12-Mar-2020 04:32:37 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/utility/filter_forum.php on line 16
+[12-Mar-2020 04:33:30 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/thehera1/public_html/hawasapp.com/application/views/utility/filter_forum.php on line 16
+[12-Mar-2020 04:35:02 Asia/Makassar] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/thehera1/public_html/hawasapp.com/application/views/utility/filter_forum.php on line 16
+[12-Mar-2020 05:46:10 Asia/Makassar] PHP Fatal error:  Call to a member function num_rows() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/filter_forum.php on line 3
+[12-Mar-2020 05:30:42 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'date' (T_STRING) in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 488
+[12-Mar-2020 05:48:27 Asia/Jakarta] PHP Fatal error:  Call to a member function result_array() on array in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 133
+[12-Mar-2020 07:17:39 Asia/Makassar] PHP Fatal error:  Call to a member function result_array() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/show_data_bc.php on line 18
+[12-Mar-2020 18:11:49 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 240
+[12-Mar-2020 18:11:49 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 240
+[12-Mar-2020 18:23:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 315
+[13-Mar-2020 05:51:02 Asia/Makassar] PHP Fatal error:  Call to a member function row() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 702
+[13-Mar-2020 18:59:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 411
+[13-Mar-2020 19:04:09 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 283
+[13-Mar-2020 19:51:50 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 320
+[13-Mar-2020 19:51:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 320
+[13-Mar-2020 19:51:53 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 320
+[13-Mar-2020 19:51:55 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 320
+[13-Mar-2020 20:00:24 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:00:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:00:28 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:00:29 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:00:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:00:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:00:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:00:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:00:59 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:01:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:02:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:02:03 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:02:15 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:02:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:02:21 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 177
+[13-Mar-2020 20:04:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '>' in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 178
+[13-Mar-2020 20:05:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '>' in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 178
+[14-Mar-2020 04:57:23 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$d' (T_VARIABLE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 227
+[15-Mar-2020 04:02:48 Asia/Makassar] PHP Fatal error:  Call to undefined function GetProvORKabFromPemilihan() in /home/thehera1/public_html/hawasapp.com/application/controllers/Utility.php on line 768
+[15-Mar-2020 16:05:12 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting variable (T_VARIABLE) or '$' in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 16:07:28 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting variable (T_VARIABLE) or '$' in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 16:07:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting variable (T_VARIABLE) or '$' in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 16:08:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting variable (T_VARIABLE) or '$' in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 16:09:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting variable (T_VARIABLE) or '$' in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 16:15:11 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 16:15:27 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 16:17:08 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 16:22:17 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/suara_per_provinsi.php on line 6
+[15-Mar-2020 17:35:33 Asia/Jakarta] PHP Fatal error:  Call to a member function num_rows() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 42
+[15-Mar-2020 17:38:44 Asia/Jakarta] PHP Fatal error:  Call to a member function num_rows() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 42
+[15-Mar-2020 17:46:39 Asia/Jakarta] PHP Fatal error:  Call to a member function num_rows() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 42
+[15-Mar-2020 17:46:48 Asia/Jakarta] PHP Fatal error:  Call to a member function num_rows() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 42
+[15-Mar-2020 17:47:58 Asia/Jakarta] PHP Fatal error:  Call to a member function num_rows() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 42
+[15-Mar-2020 17:49:20 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 136
+[15-Mar-2020 18:23:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 691
+[15-Mar-2020 18:40:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 260
+[15-Mar-2020 19:06:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 124
+[15-Mar-2020 19:29:33 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/views/page/tps.php on line 168
+[15-Mar-2020 19:29:35 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/views/page/tps.php on line 168
+[15-Mar-2020 19:29:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/views/page/tps.php on line 168
+[15-Mar-2020 19:29:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/views/page/tps.php on line 168
+[15-Mar-2020 19:29:56 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/views/page/tps.php on line 168
+[15-Mar-2020 19:29:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/views/page/tps.php on line 168
+[16-Mar-2020 01:23:09 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'CONFIRM' (T_STRING) in /home/thehera1/public_html/hawasapp.com/application/views/page/quickcount.php on line 81
+[16-Mar-2020 01:23:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'CONFIRM' (T_STRING) in /home/thehera1/public_html/hawasapp.com/application/views/page/quickcount.php on line 81
+[16-Mar-2020 03:36:42 Asia/Jakarta] PHP Fatal error:  Call to a member function getDataGlobal() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 253
+[16-Mar-2020 03:39:15 Asia/Jakarta] PHP Fatal error:  Call to a member function getDataGlobal() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 254
+[16-Mar-2020 08:49:59 Asia/Jakarta] PHP Fatal error:  Call to a member function result_array() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 264
+[16-Mar-2020 09:22:15 Asia/Jakarta] PHP Fatal error:  Call to a member function result_array() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 276
+[16-Mar-2020 09:26:20 Asia/Jakarta] PHP Fatal error:  Call to a member function result_array() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 276
+[16-Mar-2020 18:35:06 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/semua_petugas.php on line 161
+[16-Mar-2020 18:35:33 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/semua_petugas.php on line 161
+[16-Mar-2020 18:35:35 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/semua_petugas.php on line 161
+[16-Mar-2020 18:35:45 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/semua_petugas.php on line 161
+[16-Mar-2020 18:35:48 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/semua_petugas.php on line 161
+[16-Mar-2020 18:36:28 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/semua_petugas.php on line 161
+[16-Mar-2020 21:14:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/thehera1/public_html/hawasapp.com/application/views/page/riwayat_lokasi_petugas.php on line 187
+[16-Mar-2020 21:14:52 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/riwayat_lokasi_petugas.php on line 187
+[16-Mar-2020 21:14:57 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/page/riwayat_lokasi_petugas.php on line 187
+[19-Mar-2020 04:59:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 28
+[19-Mar-2020 04:59:40 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 28
+[19-Mar-2020 05:31:01 Asia/Jakarta] PHP Fatal error:  Call to a member function result_array() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 297
+[19-Mar-2020 05:31:07 Asia/Jakarta] PHP Fatal error:  Call to a member function result_array() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 297
+[20-Mar-2020 14:36:12 Asia/Makassar] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/filtered_petugas.php on line 16
+[20-Mar-2020 14:36:42 Asia/Makassar] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/filtered_petugas.php on line 16
+[17-Apr-2020 00:04:10 Asia/Makassar] PHP Fatal error:  Call to a member function fetch_assoc() on array in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 241
+[16-Apr-2020 23:04:55 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 241
+[17-Apr-2020 00:12:04 Asia/Makassar] PHP Fatal error:  Call to undefined function size() in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 241
+[17-Apr-2020 00:12:13 Asia/Makassar] PHP Fatal error:  Call to undefined function size() in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 241
+[17-Apr-2020 00:12:52 Asia/Makassar] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 242
+[17-Apr-2020 00:14:01 Asia/Makassar] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 242
+[17-Apr-2020 00:15:19 Asia/Makassar] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 243
+[16-Apr-2020 23:32:35 Asia/Jakarta] PHP Fatal error:  Cannot redeclare GlobalCon::sendNotifFirebaseBroadcast() in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 269
+[17-Apr-2020 08:30:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 595
+[17-Apr-2020 08:31:25 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 240
+[17-Apr-2020 08:31:26 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 240
+[17-Apr-2020 08:31:48 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 240
+[17-Apr-2020 08:31:48 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 240
+[17-Apr-2020 08:35:16 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 242
+[17-Apr-2020 08:35:16 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 242
+[17-Apr-2020 08:35:37 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 242
+[17-Apr-2020 08:35:38 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 242
+[17-Apr-2020 08:35:38 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 242
+[17-Apr-2020 08:35:39 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/pengguna.php on line 242
+[17-Apr-2020 14:29:32 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/forum.php on line 169
+[17-Apr-2020 18:33:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 261
+[17-Apr-2020 18:33:06 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 261
+[17-Apr-2020 18:34:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 261
+[17-Apr-2020 18:34:56 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 261
+[17-Apr-2020 18:34:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 261
+[17-Apr-2020 18:36:16 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 262
+[17-Apr-2020 18:36:35 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/hitungcepat.php on line 262
+[18-Apr-2020 13:49:09 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/forum.php on line 169
+[18-Apr-2020 13:58:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<' in /home/thehera1/public_html/hawasapp.com/application/views/page/petugas_tps.php on line 34
+[18-Apr-2020 13:59:22 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<' in /home/thehera1/public_html/hawasapp.com/application/views/page/petugas_tps.php on line 34
+[18-Apr-2020 13:59:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<' in /home/thehera1/public_html/hawasapp.com/application/views/page/petugas_tps.php on line 34
+[18-Apr-2020 14:31:48 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 520
+[18-Apr-2020 14:33:02 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 512
+[18-Apr-2020 14:33:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 512
+[18-Apr-2020 14:34:07 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 512
+[18-Apr-2020 14:34:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 625
+[18-Apr-2020 14:34:59 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 625
+[18-Apr-2020 14:35:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 625
+[18-Apr-2020 14:40:33 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 341
+[18-Apr-2020 14:40:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 341
+[18-Apr-2020 14:48:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{' in /home/thehera1/public_html/hawasapp.com/application/views/page/dashboard.php on line 345
+[18-Apr-2020 15:17:47 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'ose' (T_STRING) in /home/thehera1/public_html/hawasapp.com/application/views/page/complaint.php on line 165
+[18-Apr-2020 15:58:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 627
+[18-Apr-2020 15:59:02 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 627
+[18-Apr-2020 15:59:04 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 627
+[18-Apr-2020 16:16:41 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::orderBy() in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 124
+[18-Apr-2020 16:17:02 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::orderBy() in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 125
+[18-Apr-2020 16:17:04 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::orderBy() in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 125
+[18-Apr-2020 16:21:09 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 124
+[18-Apr-2020 16:21:10 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 124
+[18-Apr-2020 16:21:55 Asia/Jakarta] PHP Fatal error:  Call to a member function order_by() on null in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 124
+[18-Apr-2020 16:22:12 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::result_array() in /home/thehera1/public_html/hawasapp.com/application/views/page/setting.php on line 74
+[18-Apr-2020 16:22:13 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::result_array() in /home/thehera1/public_html/hawasapp.com/application/views/page/setting.php on line 74
+[21-Apr-2020 19:05:47 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/thehera1/public_html/hawasapp.com/application/models/Model_crud.php on line 463
+[26-Apr-2020 14:27:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 432
+[26-Apr-2020 15:39:45 Asia/Makassar] PHP Fatal error:  Cannot access empty property in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 394
+[28-Apr-2020 16:34:34 Asia/Makassar] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 102
+[28-Apr-2020 16:35:02 Asia/Makassar] PHP Fatal error:  Call to a member function result() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 102
+[08-May-2020 04:26:42 Asia/Jakarta] PHP Fatal error:  Call to a member function result_array() on string in /home/thehera1/public_html/hawasapp.com/application/views/page/tps.php on line 128
+[08-May-2020 19:50:21 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 490
+[08-May-2020 20:02:27 Asia/Jakarta] PHP Fatal error:  Cannot use [] for reading in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 495
+[08-May-2020 20:10:33 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:10:33 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:10:36 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:10:36 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:10:46 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:10:46 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:11:09 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:11:09 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:12:01 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:12:01 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:12:47 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[08-May-2020 20:12:47 Asia/Jakarta] PHP Fatal error:  Can't use function return value in write context in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pengaduan.php on line 497
+[09-May-2020 13:21:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/thehera1/public_html/hawasapp.com/application/controllers/GlobalCon.php on line 303
+[20-May-2020 10:47:40 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 182
+[20-May-2020 15:22:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$jenis' (T_VARIABLE), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 739
+[20-May-2020 15:22:53 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$jenis' (T_VARIABLE), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/models/Model_global.php on line 739
+[20-May-2020 15:36:48 Asia/Jakarta] PHP Fatal error:  Call to a member function result_array() on null in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 356
+[20-May-2020 16:00:53 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ''get_kabupaten'' (T_CONSTANT_ENCAPSED_STRING) in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 333
+[25-May-2020 19:00:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '","' (T_CONSTANT_ENCAPSED_STRING) in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 318
+[25-May-2020 19:00:55 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '","' (T_CONSTANT_ENCAPSED_STRING) in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 318
+[25-May-2020 19:00:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '","' (T_CONSTANT_ENCAPSED_STRING) in /home/thehera1/public_html/hawasapp.com/application/controllers/user/Pilkada.php on line 318
+[28-May-2020 06:22:06 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/thehera1/public_html/hawasapp.com/application/views/page/tps.php on line 463
+[28-May-2020 08:05:21 Asia/Makassar] PHP Fatal error:  Call to a member function num_rows() on null in /home/thehera1/public_html/hawasapp.com/application/views/utility/filtered_pengguna.php on line 2
+[28-May-2020 15:07:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ',' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 7
+[28-May-2020 15:07:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'true' (T_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 16
+[28-May-2020 15:08:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 24
+[28-May-2020 15:09:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 27
+[28-May-2020 15:09:35 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 27
+[28-May-2020 15:09:47 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:09:48 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:10:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:10:09 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:10:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:10:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:10:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:28:53 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:28:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 37
+[28-May-2020 15:29:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 38
+[30-May-2020 12:22:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/thehera1/public_html/hawasapp.com/application/controllers/Pagging.php on line 182
+[26-Jun-2020 13:24:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE) in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 43
+[08-Sep-2020 13:42:45 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 13:43:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 13:45:06 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 13:46:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 14:11:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 14:12:02 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 14:29:28 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 14:32:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 15:33:05 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 15:33:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 15:40:09 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 16:15:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 16:19:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 16:19:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
+[08-Sep-2020 16:20:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in /home/thehera1/public_html/hawasapp.com/application/controllers/Sample.php on line 6
