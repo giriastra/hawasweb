@@ -28,15 +28,15 @@ $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ?
 $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
-$config['link_foto_calon']='/home/thehera1/public_html/hawasapp.com/assets/upload/calon/';
-$config['link_foto_user']='/home/thehera1/public_html/hawasapp.com/assets/upload/user/';
-$config['link_foto_partai']='/home/thehera1/public_html/hawasapp.com/assets/upload/partai/';
-$config['link_foto_setting']='/home/thehera1/public_html/hawasapp.com/assets/upload/setting/';
-$config['link_foto_himbauan']='/home/thehera1/public_html/hawasapp.com/assets/upload/announcement/';
+$config['link_foto_calon']='assets/upload/calon/';
+$config['link_foto_user']='assets/upload/user/';
+$config['link_foto_partai']='assets/upload/partai/';
+$config['link_foto_setting']='assets/upload/setting/';
+$config['link_foto_himbauan']='assets/upload/announcement/';
 $config['company_name']='Hawas Admin';
 
-$config['MAIN_URL']='http://hawasapp.com/';
-$config['URL_IMG_HIMBAUAN']='http://hawasapp.com/assets/upload/announcement/';
+$config['MAIN_URL']='http:/localhost/hawasweb/';
+$config['URL_IMG_HIMBAUAN']='http:/localhost/hawasweb/assets/upload/announcement/';
 $config['LAT_OFFICE']='-3.328385';
 $config['LONG_OFFICE']='114.588151';
 
