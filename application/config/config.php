@@ -28,20 +28,30 @@ $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ?
 $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
-$config['link_foto_calon']='assets/upload/calon/';
-$config['link_foto_user']='assets/upload/user/';
-$config['link_foto_partai']='assets/upload/partai/';
-$config['link_foto_setting']='assets/upload/setting/';
-$config['link_foto_himbauan']='assets/upload/announcement/';
-$config['company_name']='Hawas Admin';
+// $config['link_foto_calon']='assets/upload/calon/';
+// $config['link_foto_user']='assets/upload/user/';
+// $config['link_foto_partai']='assets/upload/partai/';
+// $config['link_foto_setting']='assets/upload/setting/';
+// $config['link_foto_himbauan']='assets/upload/announcement/';
+// $config['MAIN_URL']='http://hawas.kalsel.bawaslu.go.id/';
+// $config['URL_IMG_HIMBAUAN']='http://hawas.kalsel.bawaslu.go.id/assets/upload/announcement/';
 
-$config['MAIN_URL']='http:/localhost/hawasweb/';
-$config['URL_IMG_HIMBAUAN']='http:/localhost/hawasweb/assets/upload/announcement/';
+
+$config['link_foto_calon']='/home/kalselbawaslugo/public_html/hawas_versi_04/assets/upload/calon/';
+$config['link_foto_user']='/home/kalselbawaslugo/public_html/hawas_versi_04/assets/upload/user/';
+$config['link_foto_partai']='/home/kalselbawaslugo/public_html/hawas_versi_04/assets/upload/partai/';
+$config['link_foto_setting']='/home/kalselbawaslugo/public_html/hawas_versi_04/assets/upload/setting/';
+$config['link_foto_himbauan']='/home/kalselbawaslugo/public_html/hawas_versi_04/assets/upload/announcement/';
+$config['company_name']='Hawas Admin';
+$config['MAIN_URL']='http://hawas.kalsel.bawaslu.go.id/';
+$config['URL_IMG_HIMBAUAN']='http://hawas.kalsel.bawaslu.go.id/assets/upload/announcement/';
 $config['LAT_OFFICE']='-3.328385';
 $config['LONG_OFFICE']='114.588151';
 
 $config['FIREBASE_URL']='https://fcm.googleapis.com/fcm/send';
-$config['FIREBASE_API_KEY']= 'AAAAm1BQ0E4:APA91bEdiq_Nn9ngGak_w9qMT-syhtwsaFBsRZhMNr3TjE7tMOkQCkYiGtwV02et88c-JrpvbaZMuaOagFHCBGJqWkNPoTFiXukHEOJvB2dXWwlSyRIIPtOgTN97XbbhX_hAj2gbEw8e';
+$config['FIREBASE_API_KEY']= 'AAAAMPPHJPw:APA91bGLvJtMXsJoLu9yMDYo0PqQnn4eq8A4b2PVo-rTpT25-5mRk_i71HQ-KWnc-rkWICHQQ45xGlHIneuyAhqDNkvzAjr2iaZ2MXBMG_fv95yssdz922kF9qONzSllv2E-55vUo7s9';
+
+// INI RELASI KE AKUN GIRI ASTRA!
 $config['MAP_API_KEY']= 'AIzaSyA-wB1JXUi6DZLugU1DQZ2FzZ1qZm4JpS4';
 $config['MAP_API_KEY2']= 'AIzaSyA-wB1JXUi6DZLugU1DQZ2FzZ1qZm4JpS4';
 
