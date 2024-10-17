@@ -48,7 +48,7 @@ $config['URL_IMG_HIMBAUAN']='http://hawas.kalsel.bawaslu.go.id/assets/upload/ann
 $config['LAT_OFFICE']='-3.328385';
 $config['LONG_OFFICE']='114.588151';
 
-$config['FIREBASE_URL']='https://fcm.googleapis.com/fcm/send';
+$config['FIREBASE_URL']='https://fcm.googleapis.com/v1/projects/fluter-3f757/messages:send';
 $config['FIREBASE_API_KEY']= 'AAAAiR6anHw:APA91bHAhDeZJDF2GI6_nyWiHVnv7pp_pl7NLF5GZ0wlVdAY1w4MxNtTgxLeOd4FWlUh5242ToSOScJPNKd1io7PeEpZ03aOrzqc59_E3jH_NICzIU6cJYMLKVuRwS_sibIrbQc_XVYo';
 
 // INI RELASI KE AKUN GIRI ASTRA!
