@@ -296,7 +296,7 @@ class Model_globalAndroid extends CI_Model {
 							'topic'=>'chat',
 							'notification'=>array(
 								'title'=>$title,
-								'body'=>$data_pesan['message_pengaduan'],
+								'body'=>@$data_pesan['message_pengaduan'],
 							),
 							'data'=>array(
 								'story_id'=>$this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
@@ -337,7 +337,7 @@ class Model_globalAndroid extends CI_Model {
 					'firebase_id'=>$firebase_id,
 					'pesan'=>json_encode($fields),
 					'tipe'=>$mode,
-					'respon_firebase'=>$result,
+					'respon_firebase'=>@$data_pesan['message_pengaduan'],
 					'create_date'=>date('Y-m-d H:i:s')
 				);
 				$this->db->insert('tb_log_pesan_firebase',$data);
