@@ -50,6 +50,7 @@ class GlobalCon extends CI_Controller {
 			$this->ReturnReponse($Data);
 	}
 
+
 	public function inputBerita(){
 
 			$judul=$this->events->judul;
@@ -278,7 +279,7 @@ class GlobalCon extends CI_Controller {
 					}else{
 						$data=array( 'status'=>'false','message'=>'Notif Gagal Dikirim');
 					}
-				
+
 			}else{
 				$data=array( 'status'=>'true','message'=>'Notif DEMO Berhasil Dikirim');
 			}

@@ -82,8 +82,18 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
                         <td>
                           <?php
                             if ($row['val2_type']=='IMAGE') {
+
+                              if($row['kategori']=="SLIDE_HOME"){
+                                  ?>
+                                  <img src="<?=base_url()?>assets/upload/announcement/<?=$row['value2']?>" width="70px;">
+                                  <?
+                              }else{  ?>
+                                  <img src="<?=base_url()?>assets/upload/setting/<?=$row['value2']?>" width="70px;">
+                                  <?
+                              }
+
                           ?>
-                            <img src="<?=base_url()?>assets/upload/setting/<?=$row['value2']?>" width="70px;">
+
                           <?php
                             } else {
                               echo $row['value2'];
@@ -253,7 +263,7 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
 <script type="text/javascript">
   $(document).ready(function () {
     $.noConflict();
-    
+
     var table = $('#myTable').DataTable(
       {
       "aLengthMenu": [[20, 30, 40, -1], [20, 30, 40, "All"]],
@@ -418,7 +428,12 @@ function alertdel(id){
                   if (data[0]['val2_type']=='IMAGE') {
                     $("#img_update").show();
                     $("#txt_update").hide();
+                    if (data[0]['kategori']=='SLIDE_HOME') {
+                      $('.file-upload-image').attr('src', "<?=base_url()?>assets/upload/announcement/"+data[0]['value2']);
+                    }else{
                     $('.file-upload-image').attr('src', "<?=base_url()?>assets/upload/setting/"+data[0]['value2']);
+                    }
+
                     $('.image-upload-wrap').hide();
                     $('.file-upload-content').show();
                   } else {

@@ -35,8 +35,4 @@ class Web extends CI_Controller {
 		$this->session->sess_destroy();
 		$this->load->view('login');
 	}
-
-	public function lnk(){
-		echo base_url()."Web/logout";
-	}
 }

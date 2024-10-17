@@ -84,11 +84,51 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
                 </div>
               </div>    
               <div class="card-footer">
-                  <button class="btn btn-primary" onclick="SyncData()" id="btn_sync"><i class="la la-refresh"></i> Sync data</button>
+                  <!-- <button class="btn btn-primary" onclick="SyncData()" id="btn_sync"><i class="la la-refresh"></i> Sync data</button> -->
                   <span id="loadersync"><b><i class="la la-spinner la-spin" style="color: #6b9ffe"></i> Sedang Sinkronasi Data Mohon Tunggu..</b></span>
+                   <button class="btn btn-success" onclick="KirimBCV2()" id="btn_sendBC"><i class="la la-rocket"></i> Kirim BroadCast</button>
               </div>              
              </div>
 
+</div>
+
+<div class="col-xl-12 col-lg-12" style="float:left">
+  <div class="card">
+    <div class="card-header">
+      History BroadCast
+    </div>
+    <div class="card-body">
+       <div class="table-responsive">
+                  <table class="table table-bordered" id="myTable2" style="table-layout: fixed;">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="width: 30px">No</th>
+                        <th scope="col"style="width: 100px">Jenis Broadcast</th>
+                        <th scope="col"style="width: 200px  ">Judul</th>
+                        <th scope="col"style="width: 200px">URL Gambar</th>
+                        <th scope="col"style="width: 200px">URL Web</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      $no=0;
+                      foreach ($this->model_global->getDataGlobal('tb_data_broadcast')->result_array() as $row) {
+                      $no++;
+                      ?>
+                      <tr>
+                        <th scope="row"><?=$no?></th>
+                        <td><?=$row['jenis_broadcast']?></td>
+                        <td><?=$row['judul']?></td>
+                        <td><?=$row['url_img']?></td>
+                        <td><?=$row['url_web']?></td>
+                          <?php } ?>
+                         <!-- modal -->
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+    </div>
+  </div>
 </div>
 
 <div class="col-xl-12 col-lg-12" style="float:left" id="card_data_bc">
@@ -105,7 +145,8 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
                   
               </div>    
               <div class="card-footer">
-                  <button class="btn btn-success" onclick="CountBC('animation_true','none')" id="btn_sendBC"><i class="la la-rocket"></i> Kirim BroadCast</button>
+                  <!-- <button class="btn btn-success" onclick="CountBC('animation_true','none')" id="btn_sendBC"><i class="la la-rocket"></i> Kirim BroadCast</button> -->
+                  <button class="btn btn-success" onclick="KirimBCV2()" id="btn_sendBC"><i class="la la-rocket"></i> Kirim BroadCast</button>
               </div>     
          </div>
 
@@ -116,6 +157,7 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
   $(document).ready(function () {
       $.noConflict();
       var table = $('#myTable_commnets').DataTable();
+      var table2 = $('#myTable2').DataTable();
       $("#loadersync").hide();
       $("#card_data_bc").hide();
   });
@@ -263,6 +305,44 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
                 }
             });
         }, 1000);
+      
+    }
+
+    function KirimBCV2(){
+      $("#pageloader").show();
+      setTimeout(function() {
+        var hps = new FormData();
+        hps.append('title',$("#judul_bc").val());
+        hps.append('msg',$("#pesan_bc").val());
+        hps.append('url_web',$("#urlWeb_bc").val());
+        hps.append('url_img',$("#urlGambar_bc").val());
+        hps.append('jenis_broadcast',$("#jenis_broadcast").val());
+        hps.append('func','sendNotifFirebaseBroadcastAllDevice');
+        $.ajax({
+            url   :'<?=base_url()?>Utility/SendBCtoApi',
+            method:'POST',
+            contentType: false,      
+            processData:false, 
+            data  :hps,
+            dataType:'json',
+            success: function(data) {
+              console.log(data);
+              $("#pageloader").hide();
+              if (data.status=='true'){
+                swal("Informasi",data.message,"success")
+               .then((value) => {
+                  window.location.reload();
+                });
+              } else {
+                swal("Informasi",data.message,"error");
+              }
+             
+            },error: function(data){
+               console.log(data);
+               swal("Informasi","Gagal Terhubung Ke Server" ,"error");
+            }
+        });
+      }, 500);
       
     }
 </script>

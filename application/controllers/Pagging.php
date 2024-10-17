@@ -20,6 +20,12 @@ class Pagging extends CI_Controller {
 	 */
 
 
+	 public function __construct(){
+ 		parent::__construct();
+ 		$this->load->model('Model_pengaduan');
+		$this->load->helper(array('form', 'url'));
+ 	}
+
 
 	public function index()
 	{
@@ -40,6 +46,7 @@ class Pagging extends CI_Controller {
 		if(!$this->session->userdata('islogin')){
 			redirect('Login','refresh');
 		} else {
+
 			$name_uri=$this->uri->segment(1);
 			$page_name_db=$this->model_global->daftar_menu($name_uri)->row()->nama_menu;
 			$d['page']='page/'.$name_uri;
@@ -56,6 +63,11 @@ class Pagging extends CI_Controller {
 			$d['page']='page/dashboard';
 			$this->load->view('home',$d);
 		}
+	}
+
+	public function privacy(){
+		$d['page']='privacy_policy';
+		$this->load->view('privacy_policy',$d);
 	}
 
 
@@ -76,6 +88,19 @@ class Pagging extends CI_Controller {
 		} else {
 			$d['page']='page/complaint_detail';
 			$d['page_name']='Complaint';
+			$this->load->view('home',$d);
+		}
+	}
+
+	public function TrackingStatus(){
+		if(!$this->session->userdata('islogin')){
+			redirect('Login','refresh');
+		} else {
+			$d['page']='page/tracking_status';
+			$d['page_name']='Tracking Penyelesaian Laporan';
+			$d['dt_complaint']= $this->Model_pengaduan->getPengaduanById($this->uri->segment(2));
+		
+
 			$this->load->view('home',$d);
 		}
 	}
@@ -201,6 +226,8 @@ class Pagging extends CI_Controller {
 				$d['lat']=$dataCompany->latitude;
 				$d['long']=$dataCompany->longitude;
 			}
+
+
 			$d['resultMark']=json_encode($getDataMark);
 			$d['page']='page/map_tps';
 			$d['tipe_view']='page/map_tps';

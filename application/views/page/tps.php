@@ -1084,12 +1084,12 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
         // $("#filter_kel").hide('slow');
     } else {
       var hps = new FormData();
-      // hps.append('menu','kabupaten');
-      // hps.append('table','tb_kabupaten');
-      // hps.append('where','id_provinsi');
-      hps.append('id_provinsi',Typedaerah);
+      hps.append('menu','kabupaten');
+      hps.append('table','tb_kabupaten');
+      hps.append('where','id_provinsi');
+      hps.append('parameter',Typedaerah);
       $.ajax({
-          url   :'<?=base_url()?>Utility/GetDataKabupatenInTps',
+          url   :'<?=base_url()?>Utility/GetDataUpdate2',
           method:'POST',
           contentType: false,
           processData:false,

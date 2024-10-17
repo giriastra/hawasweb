@@ -19,10 +19,10 @@ class Test extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{	
+	{
 		$this->load->view('test');
 	}
 
-
+ 
 
 }

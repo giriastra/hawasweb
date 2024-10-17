@@ -107,6 +107,7 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
                     <thead>
                       <tr>
                         <th scope="col" style="width: 50px;">No</th>
+                          <th scope="col" style="width: 140px"><center>Aksi</center></th>
                         <th scope="col"style="width: 100px">Code</th>
                         <th scope="col"style="width: 200px">Petugas</th>
                         <th scope="col"style="width: 200px">Pengguna</th>
@@ -118,7 +119,7 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
                         <th scope="col"style="width: 150px">Status</th>
                         <th scope="col"style="width: 150px">Rating</th>
                         <th scope="col"style="width: 200px">Komentar</th>
-                        <th scope="col" style="width: 140px"><center>Aksi</center></th>
+
                       </tr>
                     </thead>
                     <tbody>
@@ -129,7 +130,13 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
                       ?>
                       <tr>
                         <td><?=$no?></td>
-                        <td><?=$row['code']?></td>
+                        <td style="width: 300px;">
+                        <center>
+                          <a href="<?=base_url()?>detail_complaint/<?=$row['id_complaint']?>?id_petugas=<?=$row['id_petugas']?>&status=<?=$row['status']?>"><button class="btn  btn-social-icon mr-1 mb-1 btn-twitter" onclick=""><i class="la la-eye"></i></button></a>
+                          <a href="<?=base_url()?>tracking_status/<?=$row['id_complaint']?>"><button class="btn  btn-social-icon mr-1 mb-1 btn-soundcloud" onclick=""><i class="la la-check-square-o"></i></button></a>
+                        </center>
+                        </td>
+                        <td> <?=$row['code']?></td>
                         <td>
                           <?php
                             if ($row['id_petugas']==0) {
@@ -210,14 +217,9 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
                             }
                         ?> </td>
                         <td><?=$row['message_rating']?></td>
-                        <td style="width: 300px;">
-                        <center>
-                          <a href="<?=base_url()?>detail_complaint/<?=$row['id_complaint']?>?id_petugas=<?=$row['id_petugas']?>&status=<?=$row['status']?>"><button class="btn btn-success" onclick=""><i class="la la-eye"></i></button></a>
-                        </center>
-
                           <?php } ?>
-                         <!-- modal -->
-                        </td>
+
+
                       </tr>
                     </tbody>
                   </table>

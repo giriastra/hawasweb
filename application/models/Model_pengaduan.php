@@ -6,9 +6,9 @@ class Model_pengaduan extends CI_Model {
 			$q = $this->db->query(" SELECT
           	`id_complaint`, `code`, `id_petugas`, `id_user`,
 						(select name from tb_user y where y.id_user =x.id_user) as nama_user,
-          	date_format(date_request,'%d-%m-%Y %h:%i')  as `date_request`,
-          	ifnull(date_format(date_confirm,'%d-%m-%Y %h:%i'),'')  as `date_confirm`,
-          	ifnull(date_format(date_finish,'%d-%m-%Y %h:%i'),'')  as `date_finish`,
+          	date_format(date_request,'%d-%m-%Y %H:%i')  as `date_request`,
+          	ifnull(date_format(date_confirm,'%d-%m-%Y %H:%i'),'')  as `date_confirm`,
+          	ifnull(date_format(date_finish,'%d-%m-%Y %H:%i'),'')  as `date_finish`,
           	`title`, `status`,
           	ifnull(`value_rating`,'0') as `value_rating`, ifnull(`message_rating`,'') as `message_rating`,
           	ifnull( (SELECT message from tb_complaint_detail a where a.id_complaint=x.id_complaint order by id_complaint_detail desc limit 1),'-') as message,
@@ -21,15 +21,28 @@ class Model_pengaduan extends CI_Model {
 			$q = $this->db->query(" SELECT
           	`id_complaint`, `code`, `id_petugas`, `id_user`,
 						(select name from tb_user y where y.id_user =x.id_user) as nama_user,
-          	date_format(date_request,'%d-%m-%Y %h:%i')  as `date_request`,
-          	ifnull(date_format(date_confirm,'%d-%m-%Y %h:%i'),'')  as `date_confirm`,
-          	ifnull(date_format(date_finish,'%d-%m-%Y %h:%i'),'')  as `date_finish`,
+          	date_format(date_request,'%d-%m-%Y %H:%i')  as `date_request`,
+          	ifnull(date_format(date_confirm,'%d-%m-%Y %H:%i'),'')  as `date_confirm`,
+          	ifnull(date_format(date_finish,'%d-%m-%Y %H:%i'),'')  as `date_finish`,
           	`title`, `status`,
           	ifnull(`value_rating`,'0') as `value_rating`, ifnull(`message_rating`,'') as `message_rating`,
           	ifnull( (SELECT message from tb_complaint_detail a where a.id_complaint=x.id_complaint order by id_complaint_detail desc limit 1),'-') as message,
           	ifnull( (SELECT name from tb_user a where a.id_user=x.id_petugas ),'-') as nama_petugas
           from tb_complaint x WHERE id_petugas=".$id_petugas." and status in (".$status.") order by id_complaint desc limit ".$limit);
 			return $q;
+	}
+
+	public function getPengaduanById($id){
+			$q = $this->db->query(" SELECT
+          	`id_complaint`, `code`, `id_petugas`, `id_user`,
+						(select name from tb_user y where y.id_user =x.id_user) as nama_user,
+          	date_format(date_request,'%d-%m-%Y %H:%i')  as `date_request`,
+          	ifnull(date_format(date_confirm,'%d-%m-%Y %H:%i'),'')  as `date_confirm`,
+          	ifnull(date_format(date_finish,'%d-%m-%Y %H:%i'),'')  as `date_finish`,
+          	`title`, `status`,
+          	ifnull( (SELECT name from tb_user a where a.id_user=x.id_petugas ),'-') as nama_petugas
+          from tb_complaint x WHERE id_complaint=".$id);
+			return $q->row();
 	}
 
 	public function getForumByIdPetugas($id_user){
@@ -67,6 +80,38 @@ class Model_pengaduan extends CI_Model {
 			return $data;
 
 	}
+
+
+	public function getTrackingStatus($id_complaint){
+			$q = $this->db->query("select * from  tb_complaint_track_status  where id_complaint=".$id_complaint);
+			return $q;
+	}
+
+	public function addTrackStatus($id_complaint){
+		$q = $this->db->query("
+				INSERT into tb_complaint_track_status(id_complaint,keterangan,ischeked)
+				select ".$id_complaint.",value,'N' from tb_setting WHERE  kategori='TRACE_STATUS' ");
+		return $q;
+
+	}
+	public function updateTrackStatus($id,$user,$status){
+
+			$data=array(
+				'ischeked'=>$status,
+				'change_date'=>date('Y-m-d h:i:s'),
+				'change_who'=>$user,
+			);
+			$this->db->where('id', $id);
+			$q = $this->db->update('tb_complaint_track_status',$data);
+			if($q){
+				echo 'sukses';
+			}else{
+				echo 'gagal';
+			}
+
+	}
+
+
 
 	public function updateStatusPengaduan($id_forum,$status,$valrating="0",$message=""){
 

@@ -540,9 +540,16 @@ class Model_crud extends CI_Model{
 				'val2_type' => $val2_type,
 			);
     	} else {
-    		$Fotolama=$this->db->get_where('tb_setting', array('id' => $id_setting))->row()->value2;
-			$path1=config_item('link_foto_setting').'/'.$Fotolama;
-			unlink($path1);
+					$Fotolama=$this->db->get_where('tb_setting', array('id' => $id_setting))->row()->value2;
+
+				if($kategori=="SLIDE_HOME"){
+					$path1=config_item('link_foto_himbauan').'/'.$Fotolama;
+				}else {
+					$path1=config_item('link_foto_setting').'/'.$Fotolama;
+				}
+
+				unlink($path1);
+
 	    	$value=array(
 				'kategori' => $kategori,
 				'sub_kat' => $sub_kategori,
@@ -724,7 +731,7 @@ class Model_crud extends CI_Model{
 
     public function UpdatePemilihanGlobal($id_provinsi,$id_kabupaten,$id_pemilihan){
     	$value=array(
-			'id_pemilihan' => $id_pemilihan			
+			'id_pemilihan' => $id_pemilihan
 		);
 		if ($id_provinsi=='semua'){
 			$q=$this->db->update('tb_tps',$value);
@@ -733,13 +740,41 @@ class Model_crud extends CI_Model{
 		}else if($id_provinsi!='semua' && $id_kabupaten!='semua') {
 			$q=$this->db->update('tb_tps',$value,array('id_provinsi' => $id_provinsi,'id_kabupaten' => $id_kabupaten));
 		}
-		
-		
+
+
 		if ($q){
 			echo "sukses";
 		} else {
 			echo "gagal ";
 		}
+    }
+
+    public function InsertLogBroadcast($pesan,$tipe,$respons){
+    	$value=array(
+			'pesan' => $pesan,
+			'tipe' => $tipe,
+			'respon_firebase' => $respons,
+			'create_date' => date('Y-m-d H:i:s')
+		);
+		$q=$this->db->insert('tb_log_pesan_firebase',$value);
+
+		return $q;
+    }
+
+    public function InsertDataBroatcast($jenis_bc,$judul,$pesan,$url_img,$url_web,$status){
+    	$value=array(
+			'jenis_broadcast' => $jenis_bc,
+			'judul' => $judul,
+			'pesan' => $pesan,
+			'url_img' => $url_img,
+			'url_web' => $url_web,
+			'status' => 'Y',
+			'create_who' => $this->session->userdata('username'),
+			'create_date' => date('Y-m-d H:i:s')
+		);
+		$q=$this->db->insert('tb_data_broadcast',$value);
+
+		return $q;
     }
 }
 ?>

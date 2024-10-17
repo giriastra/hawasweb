@@ -57,7 +57,7 @@
 				<div class="login100-form validate-form flex-sb flex-w">
 					<center><img src="<?=base_url()?>assets/img/hawas_logo_new.png" width="300px" style="margin-left: 10px;"></center>
 					<span class="login100-form-title p-b-53" style="padding-bottom:5px;margin-top: 20px; font-size: 25px; font-weight: bold;">
-						HALAMAN LOGIN
+						ADMIN LOGIN
 					</span>
 <!-- 
 					<a href="#" class="btn-face m-b-20">
