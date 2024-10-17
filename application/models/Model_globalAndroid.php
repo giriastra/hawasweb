@@ -274,6 +274,80 @@ class Model_globalAndroid extends CI_Model {
 		}
 
 
+		// This function is needed, because php doesn't have support for base64UrlEncoded strings
+		public function base64UrlEncode($text)
+			{
+				return str_replace(
+					['+', '/', '='],
+					['-', '_', ''],
+					base64_encode($text)
+				);
+			}
+
+		public function generateAuth(){
+
+				// Read service account details
+				$authConfigString = file_get_contents("./assets/jso/fluter-3f757-firebase-adminsdk-481uq-bbc91a5068.json");
+ 
+
+				// Parse service account details
+				$authConfig = json_decode($authConfigString);
+
+				// Read private key from service account details
+				$secret = openssl_get_privatekey($authConfig->private_key);
+
+				// Create the token header
+				$header = json_encode([
+					'typ' => 'JWT',
+					'alg' => 'RS256'
+				]);
+
+				// Get seconds since 1 January 1970
+				$time = time();
+
+				// Allow 1 minute time deviation between client en server (not sure if this is necessary)
+				$start = $time - 60;
+				$end = $start + 3600;
+
+				// Create payload
+				$payload = json_encode([
+					"iss" => $authConfig->client_email,
+					"scope" => "https://www.googleapis.com/auth/firebase.messaging",
+					"aud" => "https://oauth2.googleapis.com/token",
+					"exp" => $end,
+					"iat" => $start
+				]);
+
+				// Encode Header
+				$base64UrlHeader = $this->base64UrlEncode($header);
+
+				// Encode Payload
+				$base64UrlPayload = $this->base64UrlEncode($payload);
+
+				// Create Signature Hash
+				$result = openssl_sign($base64UrlHeader . "." . $base64UrlPayload, $signature, $secret, OPENSSL_ALGO_SHA256);
+
+				// Encode Signature to Base64Url String
+				$base64UrlSignature = $this->base64UrlEncode($signature);
+
+				// Create JWT
+				$jwt = $base64UrlHeader . "." . $base64UrlPayload . "." . $base64UrlSignature;
+
+				//-----Request token, with an http post request------
+				$options = array('http' => array(
+					'method'  => 'POST',
+					'content' => 'grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion='.$jwt,
+					'header'  => "Content-Type: application/x-www-form-urlencoded"
+				));
+				$context  = stream_context_create($options);
+				$responseText = file_get_contents("https://oauth2.googleapis.com/token", false, $context);
+
+				$response = json_decode($responseText);
+				return $response->access_token;
+ 
+					
+		}
+
 		public function sendPushNotification($mode,$firebase_id,$title,$msg,$url_img,$url_web,$data_pesan="0") {
 
 
@@ -290,16 +364,12 @@ class Model_globalAndroid extends CI_Model {
 				// 		 'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
 				//  );
 
-
 				 $fields = array(
 						'message' => array(
-							'topic'=>'chat',
+							'token'=>$firebase_id,
 							'notification'=>array(
 								'title'=>$title,
 								'body'=>@$msg,
-							),
-							'data'=>array(
-								'story_id'=>''
 							)
 						),
 						'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
@@ -312,7 +382,7 @@ class Model_globalAndroid extends CI_Model {
 				// Set POST variables
 				$url = config_item('FIREBASE_URL');
 				$headers = array(
-						'Authorization: Bearer '.config_item('FIREBASE_API_KEY'),
+						'Authorization: Bearer '.$this->generateAuth(),
 						'Content-Type: application/json'
 				);
 				// Open connection

@@ -13,6 +13,7 @@ class User extends CI_Controller {
 		$this->load->model('Model_pengaduan');
 		$this->load->model('Model_pilkada');
 		$this->load->helper(array('form', 'url'));
+		error_reporting(0);
 	}
 
 
@@ -37,9 +38,15 @@ class User extends CI_Controller {
 					$Data=json_encode($Data);
 					$this->ReturnReponse($Data);
 				}
+				
 
 	}
 
+
+	public function generateAuth(){
+		 
+			$this->Model_globalAndroid->generateAuth();
+	}
 
 	private function ReturnReponse($msg='',$type='OUT'){
 			echo ($msg);
