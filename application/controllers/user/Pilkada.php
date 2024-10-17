@@ -47,8 +47,8 @@ class Pilkada extends CI_Controller {
 
 
 	public function getMainEventPilkada(){
-		// $result_token = $this->Model_user->checkTokenLoginByIdUser($this->events->id_user,$this->events->token);
-		// if($result_token['status']==true){
+		$result_token = $this->Model_user->checkTokenLoginByIdUser($this->events->id_user,$this->events->token);
+		if($result_token['status']==true){
 				$result = $this->Model_pilkada->getMainEventPilkada();
 
 				if($result->num_rows()>0){
@@ -72,9 +72,9 @@ class Pilkada extends CI_Controller {
 				}else{
 					$Data=array('status'=>'false','message'=>'Belum ada data forum');
 				}
-		// }else{
-		// 	 $Data=$result_token;
-		// }
+		}else{
+			 $Data=$result_token;
+		}
 
 		$this->ReturnReponse(json_encode($Data));
 

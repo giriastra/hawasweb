@@ -48,9 +48,14 @@ class User extends CI_Controller {
 
 
 	public function enkripsi(){
-		echo "en:".$this->Model_mcrypt->encrypt($this->events->enkripsi);
+		// echo "en:".$this->Model_mcrypt->encrypt($this->events->enkripsi);
+		// echo " XXXX ";
+		// echo "dec:".$this->Model_mcrypt->decrypt($this->events->dekripsi);
+		// echo "xx";
+		echo "en: ".$this->Model_mcrypt->encrypt('bawasluhebat');
 		echo " XXXX ";
-		echo "dec:".$this->Model_mcrypt->decrypt($this->events->dekripsi);
+		echo "dec:".$this->Model_mcrypt->decrypt('8da982a072dcf3a5ac5b7948f8fa2766');
+		
 	}
 
 
@@ -442,96 +447,6 @@ class User extends CI_Controller {
 
 
 	}
-
-
-
-	public function loginSmartbiz(){
-		if($this->events->status=="0"){
-			$Data_=array( 'status'=>500,'message'=>'Failed login');
-			$Data=json_encode($Data_);
-			echo $Data;
-		}else{
-
-			echo '{
-							    "status": 200,
-							    "message": "Logged1",
-							    "data": {
-							        "user": {
-							            "id": 1,
-							            "username": "satrya",
-							            "email": "satrya@gmail.com",
-							            "roles": [
-							                {
-							                    "id": 1,
-							                    "name": "Super Admin",
-							                    "slug": "super-admin",
-							                    "permissions": [
-							                        {
-							                            "id": 1,
-							                            "name": "Get Access System",
-							                            "slug": "get-access-system"
-							                        },
-							                        {
-							                            "id": 2,
-							                            "name": "Get Access Company",
-							                            "slug": "get-access-company"
-							                        },
-							                        {
-							                            "id": 3,
-							                            "name": "Get Access Human Resource",
-							                            "slug": "get-access-human-resource"
-							                        },
-							                        {
-							                            "id": 4,
-							                            "name": "Get Access Employee Self Service",
-							                            "slug": "get-access-employee-self-service"
-							                        }
-							                    ]
-							                },
-							                {
-							                    "id": 8,
-							                    "name": "Developer",
-							                    "slug": "developer",
-							                    "permissions": null
-							                }
-							            ],
-							            "groups": [
-							                {
-							                    "id": 1,
-							                    "name": "System",
-							                    "slug": "system"
-							                }
-							            ],
-							            "companies": null,
-							            "application": [
-							                {
-							                    "id": 1,
-							                    "name": "Human Resource",
-							                    "slug": "human-resource"
-							                }
-							            ]
-							        },
-							        "token": {
-							            "token_type": "Bearer",
-							            "expires_in": 3600,
-							            "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJiZmQyZWQwMzMxMjg3MmE5NzdjZTk4MTFmZTEwYjU0N2E4Njk1YjhiNjAyMjBmZTkzYzdhZGY3ZGMzNmVjNTc0YmY1M2QzMTc2NzA5OGUyIn0.eyJhdWQiOiIyIiwianRpIjoiMmJmZDJlZDAzMzEyODcyYTk3N2NlOTgxMWZlMTBiNTQ3YTg2OTViOGI2MDIyMGZlOTNjN2FkZjdkYzM2ZWM1NzRiZjUzZDMxNzY3MDk4ZTIiLCJpYXQiOjE1ODkzNDMyNDksIm5iZiI6MTU4OTM0MzI0OSwiZXhwIjoxNTg5MzQ2ODQ5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hjEbf0fBodGUDUKUvYJBOVvTWs8be5QNnWiTVR6PZmzAMSVKwBaYiObLp1ZGDWN727VpoCBpNsZjkjhaEW9ZL4eD8ljoaWuetrXPtY51GdbESyFIEenapzSYY7M-kj-iulqZ8Mp5aMv20E5i8tsf6Qw5BMNcOpEN1Xj2kN98FnipJwCJCwslVAdbb41U3kr_e75bIFJyArevn-s9xutnR8OW3LYQfjmW-7jS6ieuO1ZZq7yLFaUK0umjOo9W97y29eMZLZKoAPe_BxIb2wLpk42V_qjkuR56Jlvru121eMAHtR4ufWW31dC3yIdARco44s8TLAzctLtKXv4kvpHL4CZGjQ1x6zN6JHtzPfBHqZAuQfG3o417rQQPFnJ7wiqtUF44nwv-D3fS0p7SE2OXYIBoOpYva8v9xVgNDkdEVXnfyE1w9q_cZadOclHo5J78oKPhW5xmmpzNIPoiRIUUOEj0jHDTml9_-8xdCezKj61nqiGt4UO8V9x5nUl62CZszqeb4thxnQwLku1gHIFGXaKsm9a5RBGSp8eeJvG2Hl7i3ZAPs2tGdS3l1xQaqdx5ynwIGU2zjav9kzK2oJzvw6AaJYvRHBVNEf86gm9619S8KoduLT0Jb0KRMMBJyFIU09tiUNdhLFdpDGFblrLDcKCaGcqgr5QonGnKLe1xDKc",
-							            "refresh_token": "def502009b2ed347f0cf8ec7d2e88af3715d1ebee25c550ecf08dc2f1240dc6ccc5d26156c8d3ec70e5eff0d7f90279cf326569b492aa160fd24b4f7a94b78669b877900f31b3a21fbe79e51535a007c6172a3f54507f9cb2ba3289b053230d64e4db3640f343c6c3815d4997f7af1c4158e8b946a74f53d32bfcf2d7d5a070155a59fbc3b7eec2526fc4c4e08e1119f67d2b7a89eb8693161a7f25c7d26395a3f07ed2efdd78c2eebe2b06edd575a1ab7ba707a5c20c6bf9af223dd52c4c52867709339747547b022a453683e757e79fa4d7994f2140c5753d753e297ee22c95ba873dde96eded31bc091ef451c465d99d585a821551307cf218ef8cabceae98bad71bdd54fe650f7f44917fb28a2824065e54c8989d867a74cfaef7d99b006c9295d3899145278f0642c29a8049a2fe8cb66a1da13a022ee662b4f350c3a28f58a95902e941b79c4454e583cb150cf4ed1aec66eeaacf00fc25fda5e73df934e"
-							        }
-							    }
-							}';
-		}
-
-
-  }
-
-
-
-	// PETUGAS
-
-
-
-
-
 
 
 

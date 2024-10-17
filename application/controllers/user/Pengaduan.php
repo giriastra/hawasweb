@@ -154,6 +154,7 @@ public function addNewRequestPengaduan(){
 				'status'=>'OPEN'
 			);
 			$last_id = $this->Model_pengaduan->addNewRequestPengaduan($data);
+			$this->Model_pengaduan->addTrackStatus($last_id);
 
 			$data_detail=array(
 				'id_complaint'=>$last_id,
@@ -384,6 +385,7 @@ public function approvePengaduanByRequest(){
 					'status'=>'APPROVED'
 				);
 				$last_id = $this->Model_pengaduan->addNewRequestPengaduan($data);
+				$this->Model_pengaduan->addTrackStatus($last_id);
 
 				// CHAT USER
 				$data_detail=array(
@@ -565,6 +567,30 @@ public function requestPetugasOnline(){
 			$this->ReturnReponse(json_encode($Data));
 
 }
+
+
+public function getTrackingStatus(){
+	$result_token = $this->Model_user->checkTokenLoginByIdUser($this->events->id_user,$this->events->token);
+	if($result_token['status']==true){
+			$Data = $this->Model_pengaduan->getTrackingStatus($this->events->id_complaint);
+			if($Data->num_rows()>0){
+				$Data=array( 'status'=>'true','message'=>'','data'=>$Data->result());
+			}else{
+				$Data=array('status'=>'false','message'=>'Tracking status tidak ditemukan');
+			}
+	}else{
+		 $Data=$result_token;
+	}
+
+	$this->ReturnReponse(json_encode($Data));
+
+}
+
+
+
+
+
+
 
 
 
