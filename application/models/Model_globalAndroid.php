@@ -295,11 +295,11 @@ class Model_globalAndroid extends CI_Model {
 						'message' => array(
 							'topic'=>'chat',
 							'notification'=>array(
-								'topic'=>$title,
-								'body'=>$data_pesan,
+								'title'=>$title,
+								'body'=>$data_pesan['message_pengaduan'],
 							),
 							'data'=>array(
-								'story_id'=>''
+								'story_id'=>$this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
 							)
 						),
 						'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
