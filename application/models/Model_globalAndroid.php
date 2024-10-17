@@ -285,16 +285,34 @@ class Model_globalAndroid extends CI_Model {
 							 'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web)
 					 );
 			}else{
-				$fields = array(
-						 'to' => $firebase_id,
-						 'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
-				 );
+				// $fields = array(
+				// 		 'to' => $firebase_id,
+				// 		 'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
+				//  );
+
+
+				 $fields = array(
+						'message' => array(
+							'topic'=>'chat',
+							'notification'=>array(
+								'topic'=>$title,
+								'body'=>$data_pesan,
+							),
+							'data'=>array(
+								'story_id'=>''
+							)
+						),
+						'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
+				);
+				
 			}
+
+
 
 				// Set POST variables
 				$url = config_item('FIREBASE_URL');
 				$headers = array(
-						'Authorization: key='.config_item('FIREBASE_API_KEY'),
+						'Authorization: Bearer '.config_item('FIREBASE_API_KEY'),
 						'Content-Type: application/json'
 				);
 				// Open connection
