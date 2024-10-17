@@ -359,21 +359,17 @@ class Model_globalAndroid extends CI_Model {
 							 'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web)
 					 );
 			}else{
-				// $fields = array(
-				// 		 'to' => $firebase_id,
-				// 		 'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
-				//  );
-
-				 $fields = array(
-						'message' => array(
+				 
+				$fields = array(
+					'message' => array(
 							'token'=>$firebase_id,
 							'notification'=>array(
 								'title'=>$title,
-								'body'=>@$msg,
-							)
-						),
-						'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
-				);
+								'body'=>@$msg
+							),
+							'data' =>$this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
+						)
+					);
 				
 			}
 
@@ -416,49 +412,49 @@ class Model_globalAndroid extends CI_Model {
 		}
 
 		public function getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan="0") {
-				$payload = array();
-				$payload['team'] = 'Indonesia';
-				$payload['score'] = '5.6';
+					$payload = array();
+					// $payload['key_team'] = 'Indonesia';
+					// $payload['key_score'] = '5.6';
 
-				$res = array();
-				if($data_pesan!="0"){
-					if($mode=="CHAT"){
-						$res['data']['id_complaint'] = $data_pesan['id_complaint'];
-						$res['data']['id_user'] = $data_pesan['id_user'];
-						$res['data']['id_petugas'] = $data_pesan['id_petugas'];
-						$res['data']['image'] = "";
+					$res = array();
+					if($data_pesan!="0"){
+						if($mode=="CHAT"){
+							$res['key_id_complaint'] = $data_pesan['id_complaint'];
+							$res['key_id_user'] = $data_pesan['id_user'];
+							$res['key_id_petugas'] = $data_pesan['id_petugas'];
+							$res['key_image'] = "";
 
-					}else if($mode=="REQ_PENGADUAN"){
-						$res['data']['id_user'] = $data_pesan['id_user'];
-						$res['data']['nama_user'] = $data_pesan['name'];
-						$res['data']['image'] = $data_pesan['foto'];
-						$res['data']['title_pengaduan'] = $data_pesan['title_pengaduan'];
-						$res['data']['message_pengaduan'] = $data_pesan['message_pengaduan'];
-						$res['data']['tgl_pengaduan'] = $data_pesan['tgl_pengaduan'];
-						$res['data']['uuid_request'] = $data_pesan['uuid_request'];
-						$res['data']['last_id_request'] = $data_pesan['last_id_request'];
+						}else if($mode=="REQ_PENGADUAN"){
+							$res['key_id_user'] = $data_pesan['id_user'];
+							$res['key_nama_user'] = $data_pesan['name'];
+							$res['key_image'] = $data_pesan['foto'];
+							$res['key_title_pengaduan'] = $data_pesan['title_pengaduan'];
+							$res['key_message_pengaduan'] = $data_pesan['message_pengaduan'];
+							$res['key_tgl_pengaduan'] = $data_pesan['tgl_pengaduan'];
+							$res['key_uuid_request'] = $data_pesan['uuid_request'];
+							$res['key_last_id_request'] = $data_pesan['last_id_request'];
 
-					}else if($mode=="REQ_PENGADUAN_APPROVE"){
-						$res['data']['id_complaint'] = $data_pesan['id_complaint'];
-						$res['data']['id_user'] = $data_pesan['id_user'];
-						$res['data']['id_petugas'] = $data_pesan['id_petugas'];
-						$res['data']['image'] = "";
+						}else if($mode=="REQ_PENGADUAN_APPROVE"){
+							$res['key_id_complaint'] = $data_pesan['id_complaint'];
+							$res['key_id_user'] = $data_pesan['id_user'];
+							$res['key_id_petugas'] = $data_pesan['id_petugas'];
+							$res['key_image'] = "";
+						}
+
+					}else{
+						$res['key_image'] = $url_img;
 					}
 
-				}else{
-					$res['data']['image'] = $url_img;
-				}
 
 
-
-				$res['data']['mode'] = $mode;
-				$res['data']['title'] = $title;
-				$res['data']['is_background'] = "true";
-				$res['data']['message'] = $msg;
-				$res['data']['payload'] = $payload;
-				$res['data']['url_web'] = $url_web;
-				$res['data']['timestamp'] = date('Y-m-d G:i:s');
-				return $res;
+					$res['key_mode'] = $mode;
+					$res['key_title'] = $title;
+					$res['key_is_background'] = "true";
+					$res['key_message'] = $msg;
+					// $res['key_payload'] = $payload;
+					$res['key_url_web'] = $url_web;
+					$res['key_timestamp'] = date('Y-m-d G:i:s');
+					return $res;
 		}
 
 
