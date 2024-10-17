@@ -6,11 +6,10 @@ class Model_global extends CI_Model{
 	public function AksiLoginUser($username,$pwd){
 		$queryChek=$this->db->query("select * from tb_user where username='$username'");
 		if ($queryChek->num_rows()>0) {
-			// $type=$queryChek->row()->id_type_user;
-			// $pwdEnc=$queryChek->row()->pwd;
-			// $pwdEnc2=$this->model_mcrypt->encrypt($pwd);
-			// if ($pwdEnc==$pwdEnc2 && ($type=='1' || $type=='2' || $type=='4' || $type=='5')) {
-			if ($queryChek->num_rows()>0) {
+			$type=$queryChek->row()->id_type_user;
+			$pwdDb=$queryChek->row()->pwd;
+			if (md5($pwd)==$pwdDb && ($type=='1' || $type=='2' || $type=='4' || $type=='5')) {
+			// if ($queryChek->num_rows()>0) {
 				$dataRow=$queryChek->row();
 				$add_session=array(
 					'username' => $dataRow->username,

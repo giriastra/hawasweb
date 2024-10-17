@@ -320,7 +320,16 @@ class Utility extends CI_Controller {
 				));
 		}else if ($menu=='tps') {
 			$tglPemilihan=$this->model_global->getDataGlobal('tb_pemilihan','id_pemilihan',$data->id_pemilihan)->row();
-			$type=($tglPemilihan->is_pilgub=="true" &&  $tglPemilihan->is_pilbub=="true") ?   "PILGUB - PILBUB" :  ($tglPemilihan->is_pilgub=="true") ?   "PILGUB" :   "PILBUB";
+
+			if($tglPemilihan->is_pilgub=="true" &&  $tglPemilihan->is_pilbub=="true"){
+				$type= "PILGUB - PILBUB";
+			}else{
+				if($tglPemilihan->is_pilgub=="true"){
+					$type= "PILGUB";
+				}else{
+					$type= "PILBUB";
+				}
+			}
 			echo json_encode(
 				array('no_tps' => $data->no_tps,
 						'ketua_tps'=>$data->ketua_tps,

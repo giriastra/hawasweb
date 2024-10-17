@@ -41,7 +41,7 @@ $config['LAT_OFFICE']='-3.328385';
 $config['LONG_OFFICE']='114.588151';
 
 $config['FIREBASE_URL']='https://fcm.googleapis.com/fcm/send';
-$config['FIREBASE_API_KEY']= 'AAAAMPPHJPw:APA91bGLvJtMXsJoLu9yMDYo0PqQnn4eq8A4b2PVo-rTpT25-5mRk_i71HQ-KWnc-rkWICHQQ45xGlHIneuyAhqDNkvzAjr2iaZ2MXBMG_fv95yssdz922kF9qONzSllv2E-55vUo7s9';
+$config['FIREBASE_API_KEY']= 'AAAAm1BQ0E4:APA91bEdiq_Nn9ngGak_w9qMT-syhtwsaFBsRZhMNr3TjE7tMOkQCkYiGtwV02et88c-JrpvbaZMuaOagFHCBGJqWkNPoTFiXukHEOJvB2dXWwlSyRIIPtOgTN97XbbhX_hAj2gbEw8e';
 $config['MAP_API_KEY']= 'AIzaSyA-wB1JXUi6DZLugU1DQZ2FzZ1qZm4JpS4';
 $config['MAP_API_KEY2']= 'AIzaSyA-wB1JXUi6DZLugU1DQZ2FzZ1qZm4JpS4';
 
@@ -401,7 +401,7 @@ $config['encryption_key'] = '';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
+$config['sess_save_path'] = sys_get_temp_dir();
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;

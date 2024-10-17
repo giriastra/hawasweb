@@ -10,34 +10,36 @@ class Model_mcrypt extends CI_Model {
 
   public function encrypt($str) {
 
-    $iv = $this->iv;
+    return $str;
+    // $iv = $this->iv;
 
-    $td = @mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
+    // $td = @mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
 
-    @mcrypt_generic_init($td, $this->key, $iv);
-    $encrypted = @mcrypt_generic($td, $str);
+    // @mcrypt_generic_init($td, $this->key, $iv);
+    // $encrypted = @mcrypt_generic($td, $str);
 
-    @mcrypt_generic_deinit($td);
-    @mcrypt_module_close($td);
+    // @mcrypt_generic_deinit($td);
+    // @mcrypt_module_close($td);
 
-    return bin2hex($encrypted);
+    // return bin2hex($encrypted);
 
   }
 
   public function decrypt($str) {
 
-    $code = $this->hex2bin($str);
-    $iv = $this->iv;
+    return $str;
+    // $code = $this->hex2bin($str);
+    // $iv = $this->iv;
 
-    $td = @mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
+    // $td = @mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
 
-    @mcrypt_generic_init($td, $this->key, $iv);
-    $decrypted = mdecrypt_generic($td, $code);
+    // @mcrypt_generic_init($td, $this->key, $iv);
+    // $decrypted = mdecrypt_generic($td, $code);
 
-    @mcrypt_generic_deinit($td);
-    @mcrypt_module_close($td);
+    // @mcrypt_generic_deinit($td);
+    // @mcrypt_module_close($td);
 
-    return utf8_encode(trim($decrypted));
+    // return utf8_encode(trim($decrypted));
 
   }
 

@@ -126,7 +126,7 @@ class Model_user extends CI_Model {
 					$data=array(
 						'id_type_user'=>"3",
 						'username'=>$username,
-						'pwd'=>$pwd,
+						'pwd'=>md5($pwd),
 						'imei'=>$imei,
 						'name'=>$name,
 						'phone'=>$phone,
@@ -169,7 +169,7 @@ class Model_user extends CI_Model {
 						$data=array(
 							'status_online'=>'N',
 							'token'=>"",
-							'pwd'=>$pwd,
+							'pwd'=>md5($pwd),
 							'date_change'=>date('Y-m-d H:i:s')
 						);
 						$this->db->where('id_user', $id);
@@ -232,8 +232,8 @@ class Model_user extends CI_Model {
 
 			foreach($q->result() as $row)
 			{
-				$pwdDbDecrypt=$this->Model_mcrypt->decrypt($row->pwd);
-				if ($pwd==$pwdDbDecrypt ){
+				// $pwdDbDecrypt=$this->Model_mcrypt->decrypt($row->pwd);
+				if (md5($pwd)==$row->pwd){
 							$data=array(
 									'imei'=>"",
 								);
@@ -288,16 +288,15 @@ class Model_user extends CI_Model {
 								$q = $this->db->query("update tb_user set imei='".$imei."' where id_user=".$row->id_user);
 						}
 
-						if($isvalidimei=="true"){
+						// if($isvalidimei=="true"){
 
 									if(strlen($firebase)>10){
 											$q = $this->db->query("update tb_user set firebase_id='".$firebase."' where id_user=".$row->id_user);
 									}
-									$pwdDbDecrypt=$this->Model_mcrypt->decrypt($row->pwd);
-									$token = $this->Model_mcrypt->encrypt($today."!".$row->id_user."!".rand(00000,99999));
+									$token = md5($today."!".$row->id_user."!".rand(00000,99999));
 
 									// echo $pwd." ".$pwdDbDecrypt;
-									if ($pwd==$pwdDbDecrypt ){
+									if (md5($pwd)==$row->pwd){
 											$res=$this->insertHistoryOnline($row->id_user,'ONLINE');
 
 											$data_token=array(
@@ -312,18 +311,18 @@ class Model_user extends CI_Model {
 											$q = $this->db->query(" select *,'".$pwd."' as token_user,(select type_user from tb_type_user where id_type_user=a.id_type_user ) as type_user from tb_user a where username='".$username."' ");
 											$data=array( 'id_user'=>$row->id_user,'token'=>$token,'data'=>$q->result());
 									}else{
-											$data=array( 'status'=>'false','message'=>'Username dan Password Anda Salah.');
+											$data=array( 'status'=>'false','message'=>'Username dan Password Anda Salah.2');
 									}
-						}else{
-							$data=array( 'status'=>'false','message'=>'Kode IMEI Anda Tidak COCOK! Silakan melakukan aktivasi akun');
-						}
+						// }else{
+						// 	$data=array( 'status'=>'false','message'=>'Kode IMEI Anda Tidak COCOK! Silakan melakukan aktivasi akun');
+						// }
 
 
 
 					}
 
 		    }else{
-							$data=array( 'status'=>'false','message'=>'Username atau Password Anda Salah.');
+							$data=array( 'status'=>'false','message'=>'Username atau Password Anda Salah.1');
 		    }
 
 
