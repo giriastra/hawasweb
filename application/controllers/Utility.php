@@ -871,4 +871,22 @@ class Utility extends CI_Controller {
 		echo json_encode($this->model_global->getIdKabInTPS($id_provinsi)->result_array());
 	}
 
+	public function updateTrackStatus(){
+			$data=array(
+				'ischeked'=>$this->input->post('status'),
+				'change_date'=>date('Y-m-d h:i:s'),
+				'change_who'=>$user,
+			);
+			$this->db->where('id', $this->input->post('id'));
+			$q = $this->db->update('tb_complaint_track_status',$data);
+			if($q){
+				echo 'sukses';
+			}else{
+				echo 'gagal';
+			}
+
+			
+
+	}
+
 }
