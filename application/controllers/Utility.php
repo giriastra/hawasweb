@@ -875,7 +875,7 @@ class Utility extends CI_Controller {
 			$data=array(
 				'ischeked'=>$this->input->post('status'),
 				'change_date'=>date('Y-m-d h:i:s'),
-				'change_who'=>$user,
+				'change_who'=>$this->session->userdata('username'),
 			);
 			$this->db->where('id', $this->input->post('id'));
 			$q = $this->db->update('tb_complaint_track_status',$data);
