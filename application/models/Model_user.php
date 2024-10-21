@@ -126,7 +126,7 @@ class Model_user extends CI_Model {
 					$data=array(
 						'id_type_user'=>"3",
 						'username'=>$username,
-						'pwd'=>md5($pwd),
+						'pwd' => password_hash($pwd, PASSWORD_DEFAULT),
 						'imei'=>$imei,
 						'name'=>$name,
 						'phone'=>$phone,
@@ -169,7 +169,7 @@ class Model_user extends CI_Model {
 						$data=array(
 							'status_online'=>'N',
 							'token'=>"",
-							'pwd'=>md5($pwd),
+							'pwd' => password_hash($pwd, PASSWORD_DEFAULT),
 							'date_change'=>date('Y-m-d H:i:s')
 						);
 						$this->db->where('id_user', $id);
@@ -233,7 +233,7 @@ class Model_user extends CI_Model {
 			foreach($q->result() as $row)
 			{
 				// $pwdDbDecrypt=$this->Model_mcrypt->decrypt($row->pwd);
-				if (md5($pwd)==$row->pwd){
+				if ( password_verify($pwd, $row->pwd)){
 							$data=array(
 									'imei'=>"",
 								);
@@ -294,9 +294,7 @@ class Model_user extends CI_Model {
 											$q = $this->db->query("update tb_user set firebase_id='".$firebase."' where id_user=".$row->id_user);
 									}
 									$token = md5($today."!".$row->id_user."!".rand(00000,99999));
-
-									// echo $pwd." ".$pwdDbDecrypt;
-									if (md5($pwd)==$row->pwd){
+									if ( password_verify($pwd, $row->pwd)){
 											$res=$this->insertHistoryOnline($row->id_user,'ONLINE');
 
 											$data_token=array(

@@ -606,9 +606,13 @@ function MapsUpdate(latitude,longitude) {
       swal("Informasi","Masukkan Nama User" ,"error");
     } else if ($('#username_update').val()=='') {
       swal("Informasi","Masukkan Username User" ,"error");
-    } else if ($('#password_update').val()=='') {
-      swal("Informasi","Masukkan Password User" ,"error");
-    } else if ($('#phone_update').val()=='') {
+    } 
+    
+    // else if ($('#password_update').val()=='') {
+    //   swal("Informasi","Masukkan Password User" ,"error");
+    // } 
+    
+    else if ($('#phone_update').val()=='') {
       swal("Informasi","Masukkan No Telepon User" ,"error");
     }else if ($('#type_user_update').val()=='') {
       swal("Informasi","Tentukan Salah Satu Tipe User" ,"error");
@@ -715,7 +719,7 @@ function MapsUpdate(latitude,longitude) {
             console.log(data);
             $("#nama_update").val(data.nama);
             $("#username_update").val(data.username);
-            $("#password_update").val(data.pwd);
+            // $("#password_update").val(data.pwd);
             $("#phone_update").val(data.phone);
             $("#type_user_update").val(data.id_type_user);
             $("#id_pengguna").val(id);

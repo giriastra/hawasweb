@@ -7,8 +7,7 @@ class Model_global extends CI_Model{
 		$queryChek=$this->db->query("select * from tb_user where username='$username'");
 		if ($queryChek->num_rows()>0) {
 			$type=$queryChek->row()->id_type_user;
-			$pwdDb=$queryChek->row()->pwd;
-			if (md5($pwd)==$pwdDb && ($type=='1' || $type=='2' || $type=='4' || $type=='5')) {
+			if ( password_verify($pwd, $queryChek->row()->pwd)  && ($type=='1' || $type=='2' || $type=='4' || $type=='5')) {
 			// if ($queryChek->num_rows()>0) {
 				$dataRow=$queryChek->row();
 				$add_session=array(
@@ -301,11 +300,10 @@ class Model_global extends CI_Model{
 	public function InsertPengguna($data){
 		$lat=$data['input_lat'];
 		$lng=$data['input_lng'];
-		$encrypt=$this->model_mcrypt->encrypt($data['password']);
 		$data=array(
 			'id_type_user' => $data['type_user'],
 			'username' => $data['username'],
-			'pwd' => $encrypt,
+			'pwd' => password_hash($data['password'], PASSWORD_DEFAULT),
 			'name' => $data['name'],
 			'phone' => $data['phone'],
 			'date_create' => date('Y-m-d H:i:s'),
@@ -322,7 +320,7 @@ class Model_global extends CI_Model{
 		$value=array(
 			'id_type_user' => $data['type_user'],
 			'username' => $data['username'],
-			'pwd' => $data['password'],
+			'pwd' => password_hash($data['password'], PASSWORD_DEFAULT),
 			'name' => $data['name'],
 			'phone' => $data['phone'],
 			'date_change' => date('Y-m-d H:i:s')

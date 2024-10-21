@@ -19,12 +19,10 @@ class Model_crud extends CI_Model{
 	//query pengguna
 	public function AksiUpdatePengguna($data){
 		$id_user=$data['id_user'];
-		$encPwd=$this->model_mcrypt->encrypt($data['password']);
 		if ($data['foto_user']=='false_upload') {
 			$value=array(
 				'id_type_user' => $data['type_user'],
 				'username' => $data['username'],
-				'pwd' => $encPwd,
 				'name' => $data['name'],
 				'phone' => $data['phone'],
 				'id_provinsi' => $data['id_provinsi'],
@@ -47,7 +45,6 @@ class Model_crud extends CI_Model{
 			$value=array(
 			 'id_type_user' => $data['type_user'],
 			 'username' => $data['username'],
-			 'pwd' => $data['password'],
 			 'name' => $data['name'],
 			 'phone' => $data['phone'],
 			 'foto' => $data['foto_user'],
@@ -57,8 +54,18 @@ class Model_crud extends CI_Model{
 		 );
 
 		}
-		$this->db->update('tb_user', $value, array('id_user' => $id_user));
-		echo "sukses";
+
+		
+		if($data['password']!=''){
+			$value['pwd'] = password_hash($data['password'], PASSWORD_DEFAULT);
+		}
+		
+		$status = $this->db->update('tb_user', $value, array('id_user' => $id_user));
+		if ($status){
+			echo "sukses";
+		} else {
+			echo "gagal";
+		}
 
 	}
 

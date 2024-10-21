@@ -13,7 +13,7 @@ class User extends CI_Controller {
 		$this->load->model('Model_pengaduan');
 		$this->load->model('Model_pilkada');
 		$this->load->helper(array('form', 'url'));
-		error_reporting(0);
+		// error_reporting(0);
 	}
 
 

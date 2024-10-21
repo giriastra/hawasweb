@@ -300,7 +300,7 @@ class Utility extends CI_Controller {
 		} else if ($menu=='pemilihan') {
 			echo json_encode(array('tgl_pem' => $data->tgl_pemilihan,'is_pilgub'=>$data->is_pilgub,'is_pilbub'=>$data->is_pilbub,'status'=>$data->status));
 		}else if ($menu=='pengguna') {
-			echo json_encode(array('id_type_user' => $data->id_type_user,'username'=>$data->username,'pwd'=>$this->model_mcrypt->model_mcrypt->decrypt($data->pwd),'nama'=>$data->name,'phone' => $data->phone,'foto' => $data->foto,'id_provinsi' => $data->id_provinsi,'id_kabupaten' => $data->id_kabupaten));
+			echo json_encode(array('id_type_user' => $data->id_type_user,'username'=>$data->username,'pwd'=>$data->pwd,'nama'=>$data->name,'phone' => $data->phone,'foto' => $data->foto,'id_provinsi' => $data->id_provinsi,'id_kabupaten' => $data->id_kabupaten));
 		}else if ($menu=='partai') {
 			echo json_encode(array('nama_partai' => $data->nama_partai,'img_logo'=>$data->img_logo));
 		}else if ($menu=='berita') {
