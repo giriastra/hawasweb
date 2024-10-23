@@ -69,6 +69,11 @@ class Pagging extends CI_Controller {
 		$d['page']='privacy_policy';
 		$this->load->view('privacy_policy',$d);
 	}
+	
+	public function privacyPetugas(){
+		$d['page']='privacy-policy-hawas-petugas';
+		$this->load->view('privacy_policy_hawas_petugas',$d);
+	}
 
 
 

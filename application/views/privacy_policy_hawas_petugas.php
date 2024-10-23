@@ -21,11 +21,11 @@
             securities entitled to vote for election of directors or other managing authority.</p>
     </li>
     <li>
-        <p><strong>Application</strong> refers to HAWAS MOBILE, the software program provided by the Company.</p>
+        <p><strong>Application</strong> refers to HAWAS MOBILE PETUGAS, the software program provided by the Company.</p>
     </li>
     <li>
         <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or
-            &quot;Our&quot; in this Agreement) refers to HAWAS MOBILE.</p>
+            &quot;Our&quot; in this Agreement) refers to HAWAS MOBILE PETUGAS.</p>
     </li>
     <li>
         <p><strong>Country</strong> refers to: Indonesia</p>
