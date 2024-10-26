@@ -119,6 +119,7 @@ $route['about'] = 'GlobalCon/getDataCompany';
 $route['inputBerita'] = 'GlobalCon/inputBerita';
 $route['privacy-policy'] = 'Pagging/privacy';
 $route['privacy-policy-hawas-petugas'] = 'Pagging/privacyPetugas';
+$route['request-delete-data'] = 'Pagging/requestDeleteData';
 $route['sendEmail'] = 'Login/sendEmail';
 
 $route['enkrip'] = 'user/User/enkripsi';

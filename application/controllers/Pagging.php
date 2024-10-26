@@ -75,6 +75,10 @@ class Pagging extends CI_Controller {
 		$this->load->view('privacy_policy_hawas_petugas',$d);
 	}
 
+	public function requestDeleteData(){
+		$this->load->view('request_delete_data');
+	}
+
 
 
 	public function ChatForum(){

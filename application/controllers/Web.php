@@ -29,6 +29,13 @@ class Web extends CI_Controller {
 
 		$this->model_global->AksiLoginUser($usr,$pwd);
 	}
+	
+	public function RequestDeleteData(){
+		$usr=$this->input->post('username');
+		$pwd=$this->input->post('password');
+
+		$this->model_global->RequestDeleteData($usr,$pwd);
+	}
 
 	public function logout(){
 		//$this->model_global->Offline();

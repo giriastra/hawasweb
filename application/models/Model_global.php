@@ -35,6 +35,37 @@ class Model_global extends CI_Model{
 		return $queryChek;
 	}
 
+	public function RequestDeleteData($username,$pwd){
+		$queryChek=$this->db->query("select * from tb_user where username='$username'");
+		if ($queryChek->num_rows()>0) {
+			$type=$queryChek->row()->id_type_user;
+			if ( password_verify($pwd, $queryChek->row()->pwd)) {
+				// $dataRow=$queryChek->row();
+				// $add_session=array(
+				// 	'username' => $dataRow->username,
+				// 	'level_akses' => $dataRow->id_type_user,
+				// 	'nama' => $dataRow->name,
+				// 	'id_user' => $dataRow->id_user,
+				// 	'phone' => $dataRow->phone,
+				// 	'status_online' => $dataRow->status_online,
+				// 	'id_provinsi' => $dataRow->id_provinsi,
+				// 	'id_kabupaten' => $dataRow->id_kabupaten,
+				// 	'islogin' => 'true'
+				// );
+				// $this->session->set_userdata($add_session); //add data session
+				// // $this->Online($dataRow->id_user); //make user online
+				echo json_encode(array('status' => 'sukses','pesan' => 'Your request already submited, we will process asap'));
+			} else {
+				echo json_encode(array('status' => 'gagal','pesan' => 'Your credential account invalid!'));
+			}
+
+		} else {
+			echo json_encode(array('status' => 'gagal','pesan' => 'Your credential account invalid!'));
+		}
+
+		return $queryChek;
+	}
+
 	public function tgl_indo($tgl){
 			$newdate=$tgl;
 			$jam = substr($newdate,11,10);
