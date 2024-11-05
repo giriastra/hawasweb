@@ -161,7 +161,7 @@ class Utility extends CI_Controller {
 		$status=$this->input->post("status");
 		$this->model_crud->AksiTambahBerita($judul,$desc,$link_gmbr,$link_web,$status);
 
-		$mdGlobal 		= $this->Model_globalAndroid->sendPushNotification("BROADCAST","",$judul,$desc,$link_gmbr,$link_web);
+		$mdGlobal 		= $this->Model_globalAndroid->sendPushNotification("BROADCAST","user",$judul,$desc,$link_gmbr,$link_web);
 
 	}
 
@@ -187,7 +187,7 @@ class Utility extends CI_Controller {
 				if(strlen($link_gambar)>11){
 						$link_gambar = $url.$link_gambar;
 				}
-				$mdGlobal 		= $this->Model_globalAndroid->sendPushNotification("BROADCAST","",$judul,$desc,$link_gambar,$link_website);
+				$mdGlobal 		= $this->Model_globalAndroid->sendPushNotification("BROADCAST","user",$judul,$desc,$link_gambar,$link_website);
 				// echo $mdGlobal;
 
 	}
@@ -766,53 +766,65 @@ class Utility extends CI_Controller {
 		// $sendBC=$this->Model_globalAndroid->sendPushNotification($namaBC,$data->firebase_id,$data->judul,$data->pesan,$data->url_img,$data->url_web);
 		$idBC=$data->id_broadcast;
 			// //API URL
-			$url = 'http://hawasapp.com/global';
-			//create a new cURL resource
-			$ch = curl_init($url);
-			//setup request to send json via POST
-			$data = array(
-					  'firebase_id' => $data->firebase_id,
-					  'title' => $data->judul,
-					  'msg' => $data->pesan,
-					  'url_img' => $data->url_img,
-					  'url_web' => $data->url_web,
-					  'Func' => 'sendNotifFirebaseBroadcast'
-			);
-			$payload = json_encode($data);
-			 //echo $payload;
-			//attach encoded JSON string to the POST fields
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-			//set the content type to application/json
-			curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
-			//return response instead of outputting
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			//execute the POST request
-			$result = curl_exec($ch);
-			//close cURL resource
-			curl_close($ch);
-			//Output response
-			//get response
-			//echo $result;
-			$dataResult=json_decode($result,true);
-			$messageArray=$dataResult['message'];
-			$resultArray=$dataResult['status'];
-			if ($resultArray=='true') {
-				$valUpdate = array(
-				    'status' => 'Y',
-				    'change_date' => date('Y-m-d H:i:s')
-				);
-				$this->db->where('id_broadcast', $idBC);
-				$this->db->update('tb_data_broadcast', $valUpdate);
-			} else {
-				$valUpdate = array(
-				    'status' => 'N',
-				    'change_date' => date('Y-m-d H:i:s')
-				);
-				$this->db->where('id_broadcast', $idBC);
-				$this->db->update('tb_data_broadcast', $valUpdate);
 
+			if($jenis_broadcast=="USER"){
+				$this->Model_globalAndroid->sendPushNotification("BROADCAST","user",$data->judul,$data->pesan,$data->url_img,$data->url_web);
+			}else if($jenis_broadcast=="USER"){
+				$this->Model_globalAndroid->sendPushNotification("BROADCAST","petugas",$data->judul,$data->pesan,$data->url_img,$data->url_web);
+			}else{
+				$this->Model_globalAndroid->sendPushNotification("BROADCAST","global",$data->judul,$data->pesan,$data->url_img,$data->url_web);
 			}
-			echo json_encode(array('status' => $resultArray,'pesan'=>$messageArray,'id_bc'=>$idBC));
+
+			// $url = config_item('MAIN_URL').'global';
+			
+			// //$mdGlobal 		= $this->Model_globalAndroid->sendPushNotification("BROADCAST","",$judul,$desc,$link_gambar,$link_website);
+
+			// //create a new cURL resource
+			// $ch = curl_init($url);
+			// //setup request to send json via POST
+			// $data = array(
+			// 		  'firebase_id' => $data->firebase_id,
+			// 		  'title' => $data->judul,
+			// 		  'msg' => $data->pesan,
+			// 		  'url_img' => $data->url_img,
+			// 		  'url_web' => $data->url_web,
+			// 		  'Func' => 'sendNotifFirebaseBroadcast'
+			// );
+			// $payload = json_encode($data);
+			//  //echo $payload;
+			// //attach encoded JSON string to the POST fields
+			// curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+			// //set the content type to application/json
+			// curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+			// //return response instead of outputting
+			// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			// //execute the POST request
+			// $result = curl_exec($ch);
+			// //close cURL resource
+			// curl_close($ch);
+			// //Output response
+			// //get response
+			// //echo $result;
+			// $dataResult=json_decode($result,true);
+			// $messageArray=$dataResult['message'];
+			// $resultArray=$dataResult['status'];
+			// if ($resultArray=='true') {
+			// 	$valUpdate = array(
+			// 	    'status' => 'Y',
+			// 	    'change_date' => date('Y-m-d H:i:s')
+			// 	);
+			// 	$this->db->where('id_broadcast', $idBC);
+			// 	$this->db->update('tb_data_broadcast', $valUpdate);
+			// } else {
+			// 	$valUpdate = array(
+			// 	    'status' => 'N',
+			// 	    'change_date' => date('Y-m-d H:i:s')
+			// 	);
+			// 	$this->db->where('id_broadcast', $idBC);
+			// 	$this->db->update('tb_data_broadcast', $valUpdate);
+
+			// }
+			// echo json_encode(array('status' => $resultArray,'pesan'=>$messageArray,'id_bc'=>$idBC));
 
 			//{"status":"false","message":"Function not found."}
 

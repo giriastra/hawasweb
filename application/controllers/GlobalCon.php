@@ -63,7 +63,7 @@ class GlobalCon extends CI_Controller {
 			if($this->events->mode=="live"){
 					if($respon){
 						 $data=array( 'status'=>'true','message'=>'Input Berita Berhasil');
-						 $mdGlobal 		= $this->Model_globalAndroid->sendPushNotification("BROADCAST","",$judul,$desc,$link_gmbr,$link_web);
+						 $mdGlobal 		= $this->Model_globalAndroid->sendPushNotification("BROADCAST","global",$judul,$desc,$link_gmbr,$link_web);
 					}else{
 						 $data=array( 'status'=>'false','message'=>'Input Berita Gagal');
 					}
