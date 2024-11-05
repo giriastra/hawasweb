@@ -352,12 +352,17 @@ class Model_globalAndroid extends CI_Model {
 
 
 			if($mode=="BROADCAST"){
-					$arrayfirebase_id =  $this->getallUserFirebase();
-					$mode="INBOX";
-					$fields = array(
-							 'registration_ids' => $arrayfirebase_id,
-							 'data' => $this->getPush($mode,$title,$msg,$url_img,$url_web)
-					 );
+
+				$fields = array(
+					'message' => array(
+							'topic'=>$firebase_id,// as topic name
+							'notification'=>array(
+								'title'=>$title,
+								'body'=>@$msg
+							),
+							'data' =>$this->getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan)
+						)
+					);
 			}else{
 				 
 				$fields = array(
