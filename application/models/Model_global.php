@@ -563,6 +563,33 @@ class Model_global extends CI_Model{
 			echo "gagal";
 		}
 	}
+	
+	public function SyncDataBroadcastV2($jenis_broadcast,$judul_bc,$urlGambar_bc,$urlWeb_bc,$pesan_bc){
+
+		if ($jenis_broadcast=='USER') {
+			$whereStr='and id_type_user=3';
+		} else if ($jenis_broadcast=='PETUGAS') {
+			$whereStr='and id_type_user=2';
+		} else {
+			$whereStr='';
+		}
+		$q=$this->db->query("INSERT INTO tb_data_broadcast (
+			jenis_broadcast,
+			firebase_id,
+			judul,
+			pesan,
+			STATUS,
+			url_img,
+			url_web,
+			create_date,
+			create_who) values ( 
+			'$jenis_broadcast','','$judul_bc','$pesan_bc','P','$urlGambar_bc','$urlWeb_bc','".date('Y-m-d H:i:s')."','".$this->session->userdata('username')."' )");
+		if ($q) {
+		    return true;
+		} else {
+			return false;
+		}
+	}
 
 	public function ShowMessageBC($jenis_broadcast){
 		$q=$this->db->query("SELECT * FROM tb_data_broadcast WHERE status='P' and jenis_broadcast='$jenis_broadcast' and date_format(create_date,'%Y-%m-%d')='".date('Y-m-d')."'");

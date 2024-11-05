@@ -13,7 +13,7 @@ class Utility extends CI_Controller {
 		$this->load->model('Model_pengaduan');
 		$this->load->model('Model_forum');
 		$this->load->helper(array('form', 'url'));
-// 		error_reporting(0);
+		error_reporting(1);
 	}
 
 
@@ -758,6 +758,25 @@ class Utility extends CI_Controller {
 		$this->load->view('utility/filter_complaint',$d);
 	}
 
+    public function SendBroadCastv2(){
+        $jenis_broadcast = "global";
+        if($this->input->post('jenis_broadcast') !="UMUM"){
+              $jenis_broadcast = strtolower($this->input->post('jenis_broadcast'));
+        }
+        
+		$status = $this->Model_globalAndroid->sendPushNotification("BROADCAST",$jenis_broadcast,$this->input->post('title'),$this->input->post('msg'),$this->input->post('url_img'),$this->input->post('url_web'));
+		
+		$jenis_broadcast=$this->input->post('jenis_broadcast');
+		$judul_bc=$this->input->post('title');
+		$urlGambar_bc=$this->input->post('url_img');
+		$urlWeb_bc=$this->input->post('url_web');
+		$pesan_bc=$this->input->post('msg');
+
+		$this->model_global->SyncDataBroadcastV2($jenis_broadcast,$judul_bc,$urlGambar_bc,$urlWeb_bc,$pesan_bc);
+		
+		echo $status;
+	}
+	
 	public function SendBroadCast(){
 
 		$jenis_broadcast=$this->input->post('jenis_broadcast');

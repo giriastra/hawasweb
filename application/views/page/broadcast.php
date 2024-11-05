@@ -317,9 +317,9 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
         hps.append('url_web',$("#urlWeb_bc").val());
         hps.append('url_img',$("#urlGambar_bc").val());
         hps.append('jenis_broadcast',$("#jenis_broadcast").val());
-        hps.append('func','sendNotifFirebaseBroadcastAllDevice');
+        hps.append('Func','sendNotifFirebaseBroadcastAllDevice');
         $.ajax({
-            url   :'<?=base_url()?>global',
+            url   :'<?=base_url()?>Utility/SendBroadCastv2',
             method:'POST',
             contentType: false,      
             processData:false, 
@@ -328,8 +328,8 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
             success: function(data) {
               console.log(data);
               $("#pageloader").hide();
-              if (data.status=='true'){
-                swal("Informasi",data.message,"success")
+              if (data.status==true){
+                swal("Informasi",'Broadcast berhasil dikirim',"success")
                .then((value) => {
                   window.location.reload();
                 });
@@ -338,6 +338,7 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
               }
              
             },error: function(data){
+               $("#pageloader").hide();
                console.log(data);
                swal("Informasi","Gagal Terhubung Ke Server" ,"error");
             }

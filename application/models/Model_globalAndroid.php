@@ -401,6 +401,7 @@ class Model_globalAndroid extends CI_Model {
 				if ($result === FALSE) {
 						die('Curl failed: ' . curl_error($ch));
 				}
+				$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 				// Close connection
 				curl_close($ch);
 
@@ -413,7 +414,7 @@ class Model_globalAndroid extends CI_Model {
 				);
 				$this->db->insert('tb_log_pesan_firebase',$data);
 
-				return $result;
+				return json_encode (array("status"=>$httpcode==200?true:false,"message"=>$result));
 		}
 
 		public function getPush($mode,$title,$msg,$url_img,$url_web,$data_pesan="0") {
