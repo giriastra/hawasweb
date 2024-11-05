@@ -13,6 +13,7 @@ class Utility extends CI_Controller {
 		$this->load->model('Model_pengaduan');
 		$this->load->model('Model_forum');
 		$this->load->helper(array('form', 'url'));
+// 		error_reporting(0);
 	}
 
 
