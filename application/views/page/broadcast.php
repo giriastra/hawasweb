@@ -319,7 +319,7 @@ body.vertical-layout[data-color=bg-chartbg] .navbar-container, body.vertical-lay
         hps.append('jenis_broadcast',$("#jenis_broadcast").val());
         hps.append('func','sendNotifFirebaseBroadcastAllDevice');
         $.ajax({
-            url   :'<?=base_url()?>Utility/SendBCtoApi',
+            url   :'<?=base_url()?>global',
             method:'POST',
             contentType: false,      
             processData:false, 
